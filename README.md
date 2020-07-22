@@ -1,4 +1,3 @@
 # CustomApp
 
-Este projeto é um exemplo de integração com o login da plataforma, criando uma nova aplicação acessível à partir do menu
-O tutorial está acessível em http://dev.senior.com.br/documentacao/integrando-com-o-login-da-plataforma/
+Código fonte do tutorial [Integrando com o login da plataforma](https://dev.senior.com.br/documentacao/integrando-com-o-login-da-plataforma/).
