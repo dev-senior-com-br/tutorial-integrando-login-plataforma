@@ -1,52 +1,37 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center" class="container">
-  <div class="col-md-12"> 
-    <h1>
-      Aplicação integrada à senior X Platform
-    </h1>
+<div class="container" style="text-align: center;">
+  <div class="col-md-12">
+    <h1>Aplicação integrada à senior X Platform</h1>
   </div>
   <div class="row form-group">
-    <div class="col-10">
-      <h2>Clique aqui para obter os dados do usuário logado</h2>
-    </div>
-    <div class="col-2">
-      <button (click)="getServiceUrl()" class="btn-primary" >Obter dados</button>
+    <div class="col-12">
+      <h4>Clique aqui para obter os dados do usuário logado</h4>
+      <button (click)="getLoggedUser()" class="btn-primary">Obter dados</button>
     </div>
   </div>
-  <div class="row">
-    <div class="col-6 text-left"><span>Nome:</span></div>
-    <div class="col-6 text-left"><span>{{userData.nome}}</span></div>
+  <div *ngIf="userData.username">
+    <div class="row">
+      <div class="col-6 text-left">Nome Completo:</div>
+      <div class="col-6 text-left">{{userData.fullName}}</div>
+    </div>
+    <div class="row">
+      <div class="col-6 text-left">E-mail:</div>
+      <div class="col-6 text-left">{{userData.email}}</div>
+    </div>
+    <div class="row">
+      <div class="col-6 text-left">Usuário:</div>
+      <div class="col-6 text-left">{{userData.username}}</div>
+    </div>
+    <div class="row">
+      <div class="col-6 text-left">Nome do tenant:</div>
+      <div class="col-6 text-left">{{userData.tenantName}}</div>
+    </div>
+    <div class="row">
+      <div class="col-6 text-left">Domínio do tenant:</div>
+      <div class="col-6 text-left">{{userData.tenantDomain}}</div>
+    </div>
+    <div class="row">
+      <div class="col-6 text-left">Locale do tenant:</div>
+      <div class="col-6 text-left">{{userData.tenantLocale}}</div>
+    </div>
   </div>
-
-  <div class="row">
-    <div class="col-6 text-left"><span>Nome Completo:</span></div>
-    <div class="col-6 text-left"><span>{{userData.nomeCompleto}}</span></div>
-  </div>
-
-  <div class="row">
-    <div class="col-6 text-left"><span>Descricao:</span></div>
-    <div class="col-6 text-left"><span>{{userData.descricao}}</span></div>
-  </div>
-
-  <div class="row">
-    <div class="col-6 text-left"><span>Email:</span></div>
-    <div class="col-6 text-left"><span>{{userData.email}}</span></div>
-  </div>
-
-  <div class="row">
-    <div class="col-6 text-left"><span>Domínio do tenant:</span></div>
-    <div class="col-6 text-left"><span>{{userData.tenantDomain}}</span></div>
-  </div>
-
-  <div class="row">
-    <div class="col-6 text-left"><span>Nome do tenant:</span></div>
-    <div class="col-6 text-left"><span>{{userData.tenantName}}</span></div>
-  </div>
-  
-  <div class="row">
-    <div class="col-6 text-left"><span>Locale do tenant:</span></div>
-    <div class="col-6 text-left"><span>{{userData.tenantLocale}}</span></div>
-  </div>
-
 </div>
-
